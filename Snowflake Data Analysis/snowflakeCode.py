@@ -34,8 +34,6 @@ orders_df = session.table(tableName)
 
 # Convert Snowpark DataFrame to Pandas DataFrame
 data = orders_df.collect()
-
-# Construct Pandas DataFrame from list of dictionaries
 df = pd.DataFrame(data)
 
 # Perform operations on Pandas DataFrame
