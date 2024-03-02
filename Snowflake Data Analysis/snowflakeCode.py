@@ -95,7 +95,7 @@ root = tk.Tk()
 root.title("Arrival Calculator based on Vender ID")
 
 #Size of the UI
-root.geometry("300x150")
+root.geometry("400x150")
 
 # Label and Entry for entering the vendor ID
 vendor_label = tk.Label(root, text="Enter Vendor ID:")
