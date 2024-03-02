@@ -81,12 +81,9 @@ def calculate_arrival():
         # Display the estimated arrival date in a message box
         messagebox.showinfo("Calculate Arrival", f"Based on previous delivery data with {vendor_id} our estimated delivery date is: {est_date}")
 
-    except ValueError:
-        # If the vendor ID entered by the user is not numeric, display an error message
-        messagebox.showerror("Error", "Must be a valid vender ID")
-    except KeyError:
-        # If the vendor ID entered by the user does not exist in the DataFrame, display an error message
-        messagebox.showerror("Error", "Vendor ID does not exist in the data.")
+    except Exception as e:
+        # If the information entered by the user is not valid, display an error message
+         messagebox.showerror("Error", "Must be a valid information")
 
 
 
