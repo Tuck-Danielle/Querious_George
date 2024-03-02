@@ -1,0 +1,17 @@
+-- Adds a new column for the formatted date 
+
+ALTER TABLE PURCHASE_ORDER_HISTORY ADD NEW_DELIVERY_DATE DATE;  
+
+-- Updates the new column with the formatted date 
+
+UPDATE PURCHASE_ORDER_HISTORY 
+
+SET NEW_DELIVERY_DATE = TO_DATE(TO_CHAR(DELIVERY_DATE), 'YYYYMMDD'); 
+
+-- Drops the existing numeric column 
+
+ALTER TABLE PURCHASE_ORDER_HISTORY DROP COLUMN DELIVERY_DATE; 
+
+-- Renames the new column the original column’s name to finish the replacement 
+
+ALTER TABLE PURCHASE_ORDER_HISTORY RENAME COLUMN NEW_DELIVERY_DATE TO DELIVERY_DATE; 

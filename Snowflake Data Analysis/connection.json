@@ -1,0 +1,14 @@
+{
+  "__accountComment_": "SFEDU02.VAB89880",
+  "__accountComment2_": "SFEDU02-VAB89880",
+  "account": "SFEDU02-VAB89880",
+  "__userComment_": "Poodle",
+  "user": "Poodle",
+  "__credComment_": "either enter your password if you are confident it's safe to store it, or use externalbrowser authenticator",
+  "__credComment2_": "delete the externalbrowser authenticator row if you don't want to use that option",
+  "password": "Password101!",
+  "role": "TRAINING_ROLE",
+  "warehouse": "HACKATHON_QUERYOUS_GEORGE",
+  "database": "HACKATHON_QUERYOUS_GEORGE",
+  "schema": "PROCUREMENT_ON_TIME_DELIVERY"
+}
